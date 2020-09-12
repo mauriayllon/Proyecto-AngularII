@@ -7,10 +7,7 @@ const routes: Routes = [
    {path:'', 
    component: HomeComponent,
    children:[
-  {path:'',redirectTo:'home',pathMatch:'full'},
-
-  {path:'contacts', loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactsModule)},
-
+  {path:'contact', loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule)},
   {path:'news', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule)},
    ] 
  }
