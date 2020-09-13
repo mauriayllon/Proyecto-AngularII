@@ -1,11 +1,16 @@
-
+<div class="row">
+<div *ngFor="let new of news"
+       class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
+       style="padding: 50px; display: flex; justify-content: center;">
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://www.isglobal.org/documents/10179/7759027/Coronavirus+SARS-CoV-2+de+CDC+en+Unsplash" alt="Card image cap">
+  <img class="card-img-top" [src]="new.imageUrl" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">{{new.title}}</h5>
+    <p class="card-text">{{new.Description}}</p>
+    <a [href]="new.link" class="btn btn-primary">Ir a la noticia</a>
   </div>
+</div>
+</div>
 </div>
 <!-- Footer-->
         <footer class="footer py-4">
