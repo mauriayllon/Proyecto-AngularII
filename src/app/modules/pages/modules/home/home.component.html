@@ -8,6 +8,30 @@
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
             </div>
         </header>
+        <!--Informe Diario-->
+        <div class="row">
+  <div *ngFor="let city of cities"
+       class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3"
+       style="padding: 50px; display: flex; justify-content: center;">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{city.cuidad}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="city.imageUrl">
+      <mat-card-content> 
+        <p>
+         Casos: {{city.casos}}
+        </p>
+        <p>
+         Muertes: {{city.muertes}}
+        </p>
+        <p>
+         Recuperados: {{city.recuperados}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
