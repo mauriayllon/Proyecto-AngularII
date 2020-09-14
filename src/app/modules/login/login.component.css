@@ -13,6 +13,7 @@
   justify-content: center;
   margin-top: 250px;
   margin-bottom: 400px;
+  background: #fffc;
   }
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');

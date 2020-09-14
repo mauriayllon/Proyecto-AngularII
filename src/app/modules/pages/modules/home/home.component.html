@@ -4,7 +4,7 @@
       <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Bienvenido a Alerta Covid</div>
+                <div class="masthead-subheading">Bienvenido a Alerta Covid Bolivia</div>
             </div>
         </header>
         <!--Informe Diario-->
@@ -23,13 +23,22 @@
       <img mat-card-image [src]="city.imageUrl">
       <mat-card-content> 
         <p>
-         Casos: {{city.casos}}
+         Casos hoy: {{city.casos}}
         </p>
         <p>
-         Muertes: {{city.muertes}}
+         Muertes hoy: {{city.muertes}}
         </p>
         <p>
-         Recuperados: {{city.recuperados}}
+         Recuperados hoy: {{city.recuperados}}
+        </p>
+        <p>
+         Total de recuperados: {{city.totalRecuperados}}
+        </p>
+        <p>
+         Total de muertes: {{city.totalMuertes}}
+        </p>
+        <p>
+         Total de casos: {{city.totalCasos}}
         </p>
       </mat-card-content>
     </mat-card>
