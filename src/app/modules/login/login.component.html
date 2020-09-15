@@ -7,19 +7,37 @@
       <mat-form-field>
         <mat-label>E-mail</mat-label>
         <input matInput
-               type="text">
+               type="text"
+               name="email"
+               ngModel
+               #emailUI="ngModel"
+               required>
+        <div *ngIf="emailUI.invalid && (emailUI.touched || emailUI.dirty)"
+             class="alert alert-danger">
+          <div *ngIf="emailUI.errors.required">
+            Name is required
+          </div>
+        </div>
       </mat-form-field>
       <mat-form-field>
         <mat-label>Password</mat-label>
         <input matInput
-               type="password">
+               type="password"
+               name="password"
+               ngModel
+               #passwordUI="ngModel"
+               required>
+        <div *ngIf="passwordUI.invalid && (passwordUI.touched || passwordUI.dirty)"
+             class="alert alert-danger">
+          <div *ngIf="passwordUI.errors.required">
+            Name is required
+          </div>
+        </div>
       </mat-form-field>
     </form>
   </mat-card-content>
   <mat-card-actions style="text-align:center">
-   
-    <button mat-button (click)="onLogin()" >Login</button>
+    <button mat-button [disabled]="form.invalid" (click)="onLogin(form)">Login</button>
     <button mat-button >Registrarse</button>
-    
-  </mat-card-actions>
+  </mat-card-actions> 
 </mat-card>
