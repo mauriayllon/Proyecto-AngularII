@@ -12,4 +12,4 @@ import { PagesComponent } from './pages.component';
     PagesComponent
   ]
 })
-export class PagesModule { }
+export class PagesModule { }  

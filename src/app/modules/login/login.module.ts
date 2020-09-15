@@ -24,4 +24,4 @@ import { MatInputModule } from '@angular/material/input';
     LoginComponent,
   ]
 })
-export class LoginModule { }
+export class LoginModule { } 

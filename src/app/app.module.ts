@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
 import { AppRouting } from './app-routing.module';
@@ -21,7 +20,7 @@ const routes: Routes = [
   canActivate:[AuthGuard]}
 ];
 
-
+ 
 @NgModule({
   declarations: [
     AppComponent,

@@ -14,4 +14,4 @@ export class CitiesService {
   public getProducts(): Observable<any> {
     return this.http.get(`https://proyecto-certiii-angular.firebaseio.com/cuidades.json`);
   }
-}
+}   

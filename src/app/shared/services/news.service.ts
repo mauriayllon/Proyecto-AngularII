@@ -13,4 +13,4 @@ export class NewsService {
   public getProducts(): Observable<any> {
     return this.http.get(`https://proyecto-certiii-angular.firebaseio.com/noticias.json`);
   }
-}
+}    

@@ -19,7 +19,7 @@ export class AuthInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     const token = this.authService.getToken();;
-
+ 
     if(token){
       request=request.clone(
         {
@@ -43,4 +43,4 @@ export class AuthInterceptor implements HttpInterceptor {
     return throwError('ERROR 401')
   }
 
-}
+} 

@@ -10,7 +10,7 @@ import { CitiesService } from '../../../../shared/services/cities.service';
 export class HomeComponent implements OnInit, OnDestroy {
 
   cities=[];
-
+ 
   citiesSubs: Subscription;
   
   constructor(private citiesService: CitiesService) { }
