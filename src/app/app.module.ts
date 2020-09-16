@@ -11,6 +11,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { MessagesService } from './messages.service';
 import { ResponseService } from './response.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
 
@@ -31,6 +33,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
+    NgbModule,
+    FormsModule
   ],
   providers: [
     AuthService,

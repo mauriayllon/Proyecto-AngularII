@@ -4,14 +4,14 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable()
-export class MessagesService {
+export class ResponsesService {
 
   url = environment.app.apiBaseUrl;
 
   constructor(private http: HttpClient) {
   }
 
-  public addProduct(mensaje: any): Observable<any> {
-    return this.http.post(`${this.url}/mensajes.json`, mensaje);
+  public getProductsById(id: any): Observable<any> {
+    return this.http.get(`${this.url}/respuestas.json?orderBy="ownerId"&equalTo="${id}"&print=pretty`);
   }
 }

@@ -21,7 +21,6 @@ public login(body: any): Observable<any> {
       })
     );
   } 
- 
 private authSucess(token:string, userId:string):void{
   localStorage.setItem('auth',token);
   localStorage.setItem('userId',userId);
