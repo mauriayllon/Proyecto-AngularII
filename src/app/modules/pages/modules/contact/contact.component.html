@@ -1,4 +1,16 @@
+<!--Banner-->
+<div class="jumbotron">
+  <h1 class="display-4">Hola</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+</div>
 <!-- Contact-->
+    <div style="padding: 50px; display: flex; justify-content: center;">
+    <mat-card class="example-card" style="width:900px">
+      <mat-card-header style="padding-left: 110px">
+    <mat-card-title>Esbríbenos un mensaje</mat-card-title>
+  </mat-card-header>
     <form [formGroup]="messageForm" style="display: flex; flex-direction: column;">
   <mat-form-field>
   <mat-label>Nombre</mat-label>
@@ -14,10 +26,13 @@
     </mat-form-field>
     <mat-form-field>
   <mat-label>Mensaje</mat-label>
-  <input matInput formControlName="mensaje"type="text">
+  <textarea matInput formControlName="mensaje">
+  </textarea>
     </mat-form-field>
-    <button (click)="onCreate()">Mandar Mensaje</button>
+    <button (click)="onCreate()" style="padding: 10px" type="button" class="btn btn-warning">Mandar Mensaje</button>
 </form>
+</mat-card>
+</div>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
