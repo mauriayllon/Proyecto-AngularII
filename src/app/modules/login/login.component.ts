@@ -34,4 +34,9 @@ export class LoginComponent implements OnInit {
       }
     ) 
   }
+
+  onRegister(){
+    //this.router.navigate(['registration']);
+    console.log('Arreglar');
+  }
 }

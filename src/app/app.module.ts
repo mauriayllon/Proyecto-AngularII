@@ -9,6 +9,8 @@ import { AuthService } from './shared/services/auth.service';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './shared/guards/auth.guard';
+import { MessagesService } from './messages.service';
+import { ResponseService } from './response.service';
 
 const routes: Routes = [
 
@@ -18,9 +20,8 @@ const routes: Routes = [
   
   {path:'pages', loadChildren: () => import('./modules/pages/pages.module').then(m => m.PagesModule),
   canActivate:[AuthGuard]}
+  /*{path:'registration', loadChildren: () => import('./modules/registration/registration.module').then(m => m.RegistrationModule)}*/
 ];
-
- 
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,7 @@ const routes: Routes = [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
-      multi: true
+      multi: true,
     }
     ],
   bootstrap: [AppComponent]

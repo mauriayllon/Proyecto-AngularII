@@ -25,3 +25,4 @@ export class NewsComponent implements OnInit, OnDestroy {
     this.newsSubs ? this.newsSubs.unsubscribe():'';
   }
 } 
+ 
