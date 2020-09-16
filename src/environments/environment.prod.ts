@@ -7,4 +7,4 @@ export const environment = {
     apiBaseUrl: 'https://identitytoolkit.googleapis.com',
     key: 'AIzaSyAEtqfftnGa0QuXUSFdCO-SmgxyUeELarE'
   }
-}; 
+};

@@ -10,4 +10,4 @@ import { RegistrationComponent } from './registration.component';
     RegistrationComponent
   ]
 })
-export class RegistrationModule { }
+export class RegistrationModule { } 

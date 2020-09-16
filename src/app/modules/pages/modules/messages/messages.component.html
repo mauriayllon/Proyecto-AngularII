@@ -1,3 +1,22 @@
+<div *ngFor="let message of messages"
+       style="padding: 50px; display: flex; justify-content: center;">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>RESPUESTA</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+         Tu mensaje: {{message.mensaje}}
+        </p>
+        <p>
+         Respuesta: {{message.respuesta}}
+        </p>
+        <p>
+         Receta: {{message.recetaMedica}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
 <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -13,5 +32,5 @@
                         <a >Utiliza Barbijo</a>
                     </div>
                 </div>
-            </div>
+            </div> 
         </footer> 
