@@ -43,4 +43,4 @@ export class AuthInterceptor implements HttpInterceptor {
     return throwError('ERROR 401')
   }
 
-} 
+}

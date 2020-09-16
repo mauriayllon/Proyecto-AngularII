@@ -14,4 +14,4 @@ import { NewsService } from '../../../../shared/services/news.service';
   ],
   providers:[NewsService]
 })
-export class NewsModule { } 
+export class NewsModule { }

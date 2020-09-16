@@ -12,4 +12,4 @@ import { ContactRoutingModule } from './contact-routing.module';
     ContactComponent
   ]
 })
-export class ContactModule { } 
+export class ContactModule { }

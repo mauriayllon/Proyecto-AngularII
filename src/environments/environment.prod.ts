@@ -8,4 +8,3 @@ export const environment = {
     key: 'AIzaSyAEtqfftnGa0QuXUSFdCO-SmgxyUeELarE'
   }
 };
- 

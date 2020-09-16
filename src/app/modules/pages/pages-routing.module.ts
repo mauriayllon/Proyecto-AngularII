@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)},
   {path:'contact', loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule)},
   {path:'news', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule)},
+  {path:'messages', loadChildren: () => import('./modules/messages/messages.module').then(m => m.MessagesModule)}
    ] 
  }
 ];
