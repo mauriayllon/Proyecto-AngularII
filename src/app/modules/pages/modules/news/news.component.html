@@ -1,9 +1,8 @@
 <!--Banner-->
 <div class="jumbotron">
-  <h1 class="display-4">Hola</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4" align="center">Noticias</h1>
+  <p class="lead" align="center">Mantenganse informado con las noticias más importantes del momento, cada noticia es verificada para confirmar su fiabilidad.</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 </div>
 <div class="row">
 <div *ngFor="let new of news"
@@ -16,7 +15,7 @@
     <p class="card-text">{{new.Description}}</p>
     <p class="card-text">Fecha : {{new.fecha}}</p>
     <a [href]="new.link" class="btn btn-primary">Ir a la noticia</a>
-  </div> 
+  </div>
 </div>
 </div>
 </div>
